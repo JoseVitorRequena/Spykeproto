@@ -23,7 +23,7 @@
 		};
 	};
 
-	improts = [
-		
+	imports = [
+		./apps.nix	
 	];
 }
