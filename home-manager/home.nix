@@ -7,7 +7,7 @@
 		stateVersion = "24.05";
 
 		username = "spyke";
-		homeDirectory = "/home/spyke/"
+		homeDirectory = "/home/spyke/";
 
 		sessionVariables = {
 			EDITOR = "nvim";
@@ -25,5 +25,6 @@
 
 	imports = [
 		./apps.nix	
+		./git.nix
 	];
 }

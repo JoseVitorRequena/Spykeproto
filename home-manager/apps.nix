@@ -1,4 +1,4 @@
-{ pkgs, ... } 
+{ pkgs, ... }: 
  
 {
 	programs.btop.enable = true;
@@ -12,6 +12,10 @@
 
 	home.packages = with pkgs; [
 		cowsay
+		git
+		neovim
+		neofetch
+		firefox
 	];
 }
 

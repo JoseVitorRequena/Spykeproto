@@ -124,7 +124,12 @@
 	arduino
 	dnsmasq
 	feh
+	firefox
+	git
+	google-chrome
 	kitty
+	neofetch
+	neovim
 	plymouth
 	prismlauncher
 	steam
