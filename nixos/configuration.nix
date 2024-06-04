@@ -134,6 +134,13 @@
 	prismlauncher
 	steam
 	vesktop
+	protontricks
+	winetricks
+	gamemode
+	protonup-qt
+	wine
+	pavucontrol
+	home-manager
   ];
 
   programs.steam = {

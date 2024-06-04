@@ -1,4 +1,4 @@
-{ config, pkgs, ...}:
+{ config, pkgs, lib, ...}:
 
 let
 nvidia-offload = pkgs.writeShellScriptBin "nvidia-offload" ''
@@ -57,8 +57,19 @@ in {
         amdgpuBusId = "PCI:116:0:0";
         nvidiaBusId = "PCI:1:0:0";
       };
-
     };
   };
+     specialisation = {
+        gaming-time.configuration = {
+
+	   hardware.nvidia = {
+	      prime.sync.enable = lib.mkForce true;
+	      prime.offload = {
+	         enable = lib.mkForce false;
+		 enableOffloadCmd = lib.mkForce false;
+	      };
+	   };
+	};
+      };
 
 }
