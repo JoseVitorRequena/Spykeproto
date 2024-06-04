@@ -1,5 +1,5 @@
 {
-	description = "Spyke but proto";
+	escription = "Spyke but proto";
 
 	inputs = {
 		nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
@@ -20,13 +20,15 @@
 		config = {
 			allowUnfree = true;
 		};
+	
 	};
 	in
 	{
+
 		nixosConfigurations = {
 			spykeproto = nixpkgs.lib.nixosSystem {
 				inherit system;
-				specialArgs = { inherit inputs system; };
+				specialArgs = { inherit inputs; };
 				modules = [
 					./nixos/configuration.nix
 				];
