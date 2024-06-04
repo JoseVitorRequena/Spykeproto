@@ -1,5 +1,5 @@
 {
-	escription = "Spyke but proto";
+	description = "Spyke but proto";
 
 	inputs = {
 		nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
