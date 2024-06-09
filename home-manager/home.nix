@@ -26,5 +26,6 @@
 	imports = [
 		./apps.nix	
 		./git.nix
+		./kitty.nix
 	];
 }
