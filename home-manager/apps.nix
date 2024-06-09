@@ -1,8 +1,7 @@
-{ pkgs, ... }: 
+{ pkgs, inputs, ... }: 
  
 {
 	programs.btop.enable = true;
-
 	nixpkgs = {
 		config = {
 			allowUnfree = true;
@@ -13,9 +12,10 @@
 	home.packages = with pkgs; [
 		cowsay
 		git
-		neovim
 		neofetch
 		firefox
+		jdk
+		inputs.nixvim.packages."x86_64-linux".default
 	];
 }
 
