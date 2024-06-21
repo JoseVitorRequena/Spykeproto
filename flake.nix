@@ -32,7 +32,7 @@
 		homeConfigurations = {
 			spyke = home-manager.lib.homeManagerConfiguration {	
 				inherit pkgs;
-				modules = [ ./home-manager/home.nix ];
+				modules = [ ./home-manager/default.nix ];
 				extraSpecialArgs = { inherit inputs; };
 			};
 		};
