@@ -10,5 +10,5 @@
   	appimage-run
 	pavucontrol
 	ranger
-  ]
+  ];
 }
