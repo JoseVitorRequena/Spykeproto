@@ -19,6 +19,10 @@
 		neofetch
 		jdk
 		inputs.nixvim.packages."x86_64-linux".default
+		firefox
+		spotify
+		vesktop
+		pavucontrol
 	];
 }
 
