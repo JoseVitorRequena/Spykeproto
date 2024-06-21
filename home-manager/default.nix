@@ -22,7 +22,7 @@
   imports = [ 
     ./apps
     ./git
-    ./shell
+    
     ./utilities
   ];
 }
