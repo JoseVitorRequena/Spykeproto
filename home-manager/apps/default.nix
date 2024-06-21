@@ -11,9 +11,12 @@
 
 	home.packages = with pkgs; [
 		cowsay
-		git
+		python312Full
+		python311Packages.pygments
+		python312Packages.pip
+		python312Packages.tkinter	
+		git-lfs
 		neofetch
-		firefox
 		jdk
 		inputs.nixvim.packages."x86_64-linux".default
 	];

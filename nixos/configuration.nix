@@ -149,6 +149,8 @@
 			pavucontrol
 			home-manager
 			spotify
+			openal
+			obs-studio
 	];
 
 	programs.steam = {
