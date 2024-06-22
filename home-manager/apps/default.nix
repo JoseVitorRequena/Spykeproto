@@ -23,6 +23,7 @@
 		spotify
 		vesktop
 		pavucontrol
+		dotnet-sdk_8
 	];
 }
 

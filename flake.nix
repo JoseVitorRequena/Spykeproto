@@ -24,7 +24,7 @@
 
 		nixosConfigurations = {
 			spykeproto = nixpkgs.lib.nixosSystem {		
-				modules = [ ./nixos/configuration.nix ];
+				modules = [ ./nixos/default.nix ];
 				specialArgs = { inherit inputs system; };
 			};
 		};

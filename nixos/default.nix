@@ -7,8 +7,7 @@
 {
 	imports =
 		[ # Include the results of the hardware scan.
-		./hardware-configuration.nix
-			./nvidia.nix
+			./hardware
 			./fonts.nix
 		];
 	nixpkgs.config.allowUnfree = true;
@@ -18,10 +17,6 @@
 			experimental-features = [ "nix-command" "flakes" ];
 		};
 	};
-
-# Bootloader.
-	boot.loader.systemd-boot.enable = true;
-	boot.loader.efi.canTouchEfiVariables = true; 
 
 	environment.pathsToLink = ["/libexec"];
 
